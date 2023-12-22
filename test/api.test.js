@@ -21,25 +21,7 @@ describe('Companies API', () => {
       expect(response.body.error).toEqual('Internal Server Error');
     }
   });
-  
-  
-  
-  
-
-  it('GET /companies returns a 500 Internal Server Error response if an exception occurs', async () => {
-    // Mock the companies module only for this specific test case
-    jest.doMock('../models/companies.js', () => {
-      throw new Error('Mocked error');
-    });
-
-    const response = await request(app).get('/companies');
-
-    expect(response.status).toBe(500);
-    expect(response.body.error).toEqual('Internal Server Error');
-  });
-
-
-  
+    
 
   // handling creation of company with mission name and location
   it('POST /createcompany returns a 400 Bad Request response if name or location is missing', async () => {
