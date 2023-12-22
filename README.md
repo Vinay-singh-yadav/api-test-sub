@@ -32,10 +32,44 @@ To kickstart your journey with the Company API, follow these simple steps:
 
 1. **Clone the Repository:**
 
-   ```bash
-   git clone https://github.com/your-username/company-api.git
+    ```bash
+    git clone https://github.com/your-username/company-api.git
+    ```
 
-2. **Install Dependencies:** 
-   ```bash
-   npm install
+2. **Install Dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+    Continue with the installation of the dependencies.
+
+3. **Start the Server:**
+
+    ```bash
+    npm start
+    ```
+
+    The API will be accessible at `http://localhost:8000`.
+
+4. **API Configuration:**
+
+    Before running the API, you may need to configure environment variables. Create a `.env` file in the root of your project and add the following:
+
+    ```env
+    PORT=8000
+    ```
+
+    Adjust the `PORT` value as needed.
+
+5. **Start the Server:**
+
+    Start the API server with the configured environment variables:
+
+    ```bash
+    npm start
+    ```
+
+    The API will be accessible at `http://localhost:8000`.
+
    
