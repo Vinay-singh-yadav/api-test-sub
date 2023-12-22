@@ -134,3 +134,17 @@ Ensure the robustness of the Company API by running tests using the following co
 ```bash
 npx jest
 ```
+
+## Project Structure (continued)
+
+Understanding the structure of the project is essential for developers aiming to contribute or customize the API. Key components include:
+
+- **server.js:** The main server file.
+- **routes/:** Houses route handlers for different endpoints.
+- **models/:** Contains data models for users, companies, etc.
+- **tests/:** Includes test cases for the API.
+
+In the `routes/` directory, you'll find route handlers that define the behavior for each API endpoint. The `models/` directory holds data models representing entities like users and companies, facilitating data management within the application. The `tests/` directory includes test cases to ensure the reliability and functionality of the API.
+
+Understanding these components will provide developers with insights into the organization and functionality of the Company API.
+
