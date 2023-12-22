@@ -38,6 +38,4 @@ To kickstart your journey with the Company API, follow these simple steps:
 2. **Install Dependencies:** 
    ```bash
    npm install
-     
-
-
+   
