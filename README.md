@@ -104,6 +104,28 @@ Authenticate a user and obtain a valuable authentication token, a key for access
 {
   "token": "your-authentication-token"
 }
+```
+
+### 3. `POST /createcompany`
+
+Create a new company, an action reserved for admin users to facilitate the seamless addition of new entities to the database.
+
+#### Example Request:
+
+```json
+{
+  "user": "admin-username",
+  "name": "New Company",
+  "location": "New Location"
+}
+```
+#### Example Response:
+
+```json
+{
+  "success": "Company created successfully"
+}
+
 
 
 
