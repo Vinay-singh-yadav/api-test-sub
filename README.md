@@ -94,15 +94,16 @@ Authenticate a user and obtain a valuable authentication token, a key for access
 
 ```json
 {
-  "user": "your-username",
-  "pwd": "your-password"
+  "user": "VinaySY",
+  "pwd": "Vinay@123"
 }
 ```
 #### Example Response:
 
 ```json
 {
-  "token": "your-authentication-token"
+    "user": "VinaySY",
+    "message": "Login successful"
 }
 ```
 
