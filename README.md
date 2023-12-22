@@ -72,4 +72,19 @@ To kickstart your journey with the Company API, follow these simple steps:
 
     The API will be accessible at `http://localhost:8000`.
 
+## API Endpoints
+
+### 1. `GET /companies`
+
+Retrieve a list of all registered companies, allowing users to explore and analyze the existing corporate landscape.
+
+#### Example Response:
+
+```json
+[
+  { "id": 1, "name": "Company A", "location": "Location A" },
+  { "id": 2, "name": "Company B", "location": "Location B" }
+]
+
+
    
