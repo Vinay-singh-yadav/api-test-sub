@@ -34,3 +34,10 @@ To kickstart your journey with the Company API, follow these simple steps:
 
    ```bash
    git clone https://github.com/your-username/company-api.git
+
+2. **Install Dependencies:** 
+   ```bash
+   npm install
+     
+
+
