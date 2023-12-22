@@ -128,13 +128,44 @@ Create a new company, an action reserved for admin users to facilitate the seaml
 }
 ```
 
-## Testing 
+## Testing
 
-Ensure the robustness of the Company API by running tests using the following command:
+The Company API includes a comprehensive set of test cases to ensure its functionality and reliability. You can run these tests using the following command:
 
 ```bash
 npx jest
 ```
+## Test Cases Overview
+
+### Empty Array Handling (GET /companies):
+
+- **Description:** Verifies that the API returns a 200 OK response with an empty object when there are no companies.
+- **Test Command:** `it('GET /companies returns a 200 ok response with an empty object if no companies are found', async () => {...});`
+
+### Missing Name or Location (POST /createcompany):
+
+- **Description:** Validates that the API returns a 400 Bad Request response if the name or location is missing when creating a company.
+- **Test Command:** `it('POST /createcompany returns a 400 Bad Request response if name or location is missing', async () => {...});`
+
+### Non-Admin User Creation (POST /createcompany):
+
+- **Description:** Ensures that non-admin users receive a 401 Unauthorized response when attempting to create a company.
+- **Test Command:** `it('POST /createcompany returns a 401 Unauthorized response for non-admin users', async () => {...});`
+
+### Successful Company Retrieval (GET /companies):
+
+- **Description:** Validates that the API returns a 200 OK response with the correct list of companies.
+- **Test Command:** `it('GET /companies returns a 200 ok response if companies are found', async () => {...});`
+
+### User Authentication (POST /auth):
+
+- **Description:** Tests user authentication by checking if a correct username and password result in a 202 Accepted response.
+- **Test Command:** `it('POST /auth to login a user with a correct username and password', async () => {...});`
+
+### Unauthorized User Access (POST /auth):
+
+- **Description:** Verifies that an unauthorized user is denied access when providing an incorrect password.
+- **Test Command:** `it('POST /auth with incorrect password', async () => {...});`
 
 ## Project Structure 
 
