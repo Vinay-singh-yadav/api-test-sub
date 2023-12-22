@@ -127,15 +127,10 @@ Create a new company, an action reserved for admin users to facilitate the seaml
 }
 ```
 
-## Testing (continued)
+## Testing 
 
 Ensure the robustness of the Company API by running tests using the following command:
 
 ```bash
 npx jest
 ```
-
-
-
-
-
