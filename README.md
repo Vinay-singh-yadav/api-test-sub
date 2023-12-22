@@ -135,7 +135,7 @@ Ensure the robustness of the Company API by running tests using the following co
 npx jest
 ```
 
-## Project Structure (continued)
+## Project Structure 
 
 Understanding the structure of the project is essential for developers aiming to contribute or customize the API. Key components include:
 
@@ -147,4 +147,15 @@ Understanding the structure of the project is essential for developers aiming to
 In the `routes/` directory, you'll find route handlers that define the behavior for each API endpoint. The `models/` directory holds data models representing entities like users and companies, facilitating data management within the application. The `tests/` directory includes test cases to ensure the reliability and functionality of the API.
 
 Understanding these components will provide developers with insights into the organization and functionality of the Company API.
+
+## Dependencies (continued)
+
+The Company API relies on several dependencies to deliver its functionality. Key dependencies include:
+
+- [Express](https://expressjs.com/): A powerful web application framework for Node.js.
+- [Body-parser](https://www.npmjs.com/package/body-parser): Middleware to parse JSON requests effectively.
+- [Supertest](https://www.npmjs.com/package/supertest): A library for testing HTTP assertions, ensuring the reliability of the API.
+
+These dependencies are crucial for the core functionality and testing procedures of the Company API. Express provides a robust framework for building web applications, while Body-parser aids in parsing JSON requests efficiently. Supertest is instrumental in testing HTTP assertions, ensuring the API's reliability and correctness.
+
 
