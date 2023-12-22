@@ -86,5 +86,18 @@ Retrieve a list of all registered companies, allowing users to explore and analy
   { "id": 2, "name": "Company B", "location": "Location B" }
 ]
 
+### 2. `POST /auth`
+
+Authenticate a user and obtain a valuable authentication token, a key for accessing authorized endpoints securely.
+
+#### Example Request:
+
+```json
+{
+  "user": "your-username",
+  "pwd": "your-password"
+}
+
+
 
    
