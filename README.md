@@ -74,7 +74,7 @@ To kickstart your journey with the Company API, follow these simple steps:
 
 ## API Endpoints
 
- 1. **GET /companies**
+ ###1. `GET /companies`
 
 Retrieve a list of all registered companies, allowing users to explore and analyze the existing corporate landscape.
 
