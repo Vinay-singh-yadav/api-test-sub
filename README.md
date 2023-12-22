@@ -11,12 +11,9 @@ Welcome to the Company API, a versatile tool for efficiently managing company da
 - [Overview](#overview)
 - [Getting Started](#getting-started)
 - [API Endpoints](#api-endpoints)
-- [Authentication](#authentication)
 - [Testing](#testing)
 - [Project Structure](#project-structure)
 - [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
