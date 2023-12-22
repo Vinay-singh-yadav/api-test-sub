@@ -98,5 +98,13 @@ Authenticate a user and obtain a valuable authentication token, a key for access
   "pwd": "your-password"
 }
 ```
+#### Example Response:
+
+```json
+[
+  { "id": 1, "name": "Company A", "location": "Location A" },
+  { "id": 2, "name": "Company B", "location": "Location B" }
+]
+```
 
 
