@@ -1,5 +1,11 @@
 # Company API
 
+Author: Vinay Singh Yadav
+
+---
+
+# Company API
+
 Welcome to the Company API, a versatile tool for efficiently managing company data. This API, built using the robust Express.js framework, offers essential features such as retrieving an extensive list of companies, user authentication, and creating new companies. Whether you're a developer integrating this API into a larger system or an administrator overseeing company data, this documentation will guide you through the setup and usage of the Company API.
 
 ## Table of Contents
