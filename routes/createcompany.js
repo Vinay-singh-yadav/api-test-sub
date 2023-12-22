@@ -15,7 +15,7 @@ router.post("/", async (req, res) => {
     const role = foundUser.role;
 
     if(role!=='admin'){
-        res.sendStatus(401).json({error : "The user must be an admin to create a company"});
+      return  res.status(401).json({error : "The user must be an admin to create a company"});
     }
 
     res.json({ 'success': `User is an admin and successfully created a company` });
