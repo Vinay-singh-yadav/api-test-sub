@@ -137,35 +137,30 @@ npx jest
 ```
 ### Test Cases Overview
 
-#### Empty Array Handling (GET /companies):
+- **Empty Array Handling (GET /companies):**
+  - *Description:* Verifies that the API returns a 200 OK response with an empty object when there are no companies.
+  - *Test Command:* `it('GET /companies returns a 200 ok response with an empty object if no companies are found', async () => {...});`
 
-- **Description:** Verifies that the API returns a 200 OK response with an empty object when there are no companies.
-- **Test Command:** `it('GET /companies returns a 200 ok response with an empty object if no companies are found', async () => {...});`
+- **Missing Name or Location (POST /createcompany):**
+  - *Description:* Validates that the API returns a 400 Bad Request response if the name or location is missing when creating a company.
+  - *Test Command:* `it('POST /createcompany returns a 400 Bad Request response if name or location is missing', async () => {...});`
 
-#### Missing Name or Location (POST /createcompany):
+- **Non-Admin User Creation (POST /createcompany):**
+  - *Description:* Ensures that non-admin users receive a 401 Unauthorized response when attempting to create a company.
+  - *Test Command:* `it('POST /createcompany returns a 401 Unauthorized response for non-admin users', async () => {...});`
 
-- **Description:** Validates that the API returns a 400 Bad Request response if the name or location is missing when creating a company.
-- **Test Command:** `it('POST /createcompany returns a 400 Bad Request response if name or location is missing', async () => {...});`
+- **Successful Company Retrieval (GET /companies):**
+  - *Description:* Validates that the API returns a 200 OK response with the correct list of companies.
+  - *Test Command:* `it('GET /companies returns a 200 ok response if companies are found', async () => {...});`
 
-#### Non-Admin User Creation (POST /createcompany):
+- **User Authentication (POST /auth):**
+  - *Description:* Tests user authentication by checking if a correct username and password result in a 202 Accepted response.
+  - *Test Command:* `it('POST /auth to login a user with a correct username and password', async () => {...});`
 
-- **Description:** Ensures that non-admin users receive a 401 Unauthorized response when attempting to create a company.
-- **Test Command:** `it('POST /createcompany returns a 401 Unauthorized response for non-admin users', async () => {...});`
+- **Unauthorized User Access (POST /auth):**
+  - *Description:* Verifies that an unauthorized user is denied access when providing an incorrect password.
+  - *Test Command:* `it('POST /auth with incorrect password', async () => {...});`
 
-#### Successful Company Retrieval (GET /companies):
-
-- **Description:** Validates that the API returns a 200 OK response with the correct list of companies.
-- **Test Command:** `it('GET /companies returns a 200 ok response if companies are found', async () => {...});`
-
-#### User Authentication (POST /auth):
-
-- **Description:** Tests user authentication by checking if a correct username and password result in a 202 Accepted response.
-- **Test Command:** `it('POST /auth to login a user with a correct username and password', async () => {...});`
-
-#### Unauthorized User Access (POST /auth):
-
-- **Description:** Verifies that an unauthorized user is denied access when providing an incorrect password.
-- **Test Command:** `it('POST /auth with incorrect password', async () => {...});`
 
 ## Project Structure 
 
