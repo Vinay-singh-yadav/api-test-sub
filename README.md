@@ -186,4 +186,13 @@ The Company API relies on several dependencies to deliver its functionality. Key
 
 These dependencies are crucial for the core functionality and testing procedures of the Company API. Express provides a robust framework for building web applications, while Body-parser aids in parsing JSON requests efficiently. Supertest is instrumental in testing HTTP assertions, ensuring the API's reliability and correctness.
 
+---
+
+🚀 Happy coding! Feel free to contribute, report issues, or reach out for any questions. Let's make this project even better together.
+
+📧 Contact: Vinayrao.735@gmail.com
+🔗 Connect with me on LinkedIn: [Vinay Singh Yadav](https://www.linkedin.com/in/vinay-singh-yadav-181baa205/)
+
+Thank you for using the Company API!
+
 
