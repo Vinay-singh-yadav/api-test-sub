@@ -149,7 +149,7 @@ In the `routes/` directory, you'll find route handlers that define the behavior 
 
 Understanding these components will provide developers with insights into the organization and functionality of the Company API.
 
-## Dependencies (continued)
+## Dependencies 
 
 The Company API relies on several dependencies to deliver its functionality. Key dependencies include:
 
